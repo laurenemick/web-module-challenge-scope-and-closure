@@ -28,9 +28,16 @@ function processFirstItem(stringList, callback) {
  * 
  * 1. What is the difference between counter1 and counter2?
  * 
- * 2. Which of the two uses a closure? How can you tell?
+ * variable "count" can only be accessed locally in counter1 and globally in counter2
+ * 
+ * 2. Which of the two uses a closure? How can you tell? 
+ * 
+ * counter1 - the child function counter() has access to let count = 0 from a higher level scope (parent function).
  * 
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
+ * 
+ * counter 1 - keeping score of several different games.
+ * counter 2 - one game.
  *
 */
 
@@ -54,13 +61,14 @@ function counter2() {
 
 /* Task 2: inning() 
 
-Write a function called `inning` that generates a random number of points that a team scored in an inning. This should be a whole number between 0 and 2. */
+Write a function called `inning` that generates a random number of points that a team scored in an inning. 
+This should be a whole number between 0 and 2. */
 
-function inning(/*Code Here*/){
-
-    /*Code Here*/
-
+function inning(team){
+  let points = Math.floor(Math.random() * Math.floor(2));
+  return `Your ${team} team scored ${points} points`;
 }
+console.log(inning(baseball);
 
 /* Task 3: finalScore()
 
