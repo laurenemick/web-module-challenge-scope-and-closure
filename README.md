@@ -42,6 +42,9 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+Parent/child relationship where the child function can access variables in the parent functions lexical scope. The child function would then be considered the "closure."
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -62,9 +65,17 @@ dansRoll();
 dansRoll();
 ```
 
-a. Where is closure used in this code? How can you tell?
+a. Where is closure used in this code? How can you tell? 
+
+Anonymous function - personalDice() is invoked and surrounds the anonymous function.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+"Dan rolled a" will remain the same, the number could change.
+
 c. What is the lexical scope of `newRoll`? 
+
+funtion()
 
 ### Task 3 - Stretch Goals
 
